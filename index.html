@@ -1,66 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Music Player</title>
+    <title>Vite App</title>
   </head>
   <body>
-    <div class="player-container">
-      <div class="play-bar">
-        <img src="https://i.pinimg.com/736x/cf/5a/ae/cf5aae8c7c97a13b546d78ad9d2e33da.jpg" alt="" id="img" />
-        <div class="data-text">
-          <p>Альбом</p>
-          <h1 id="text">Kendrick Lamar</h1>
-          <div>
-            <img
-              src="data:image/jpeg;base64,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"
-              alt=""
-            />
-            <p class="white">The Weekng</p>
-            <div class="dot"></div>
-            <div class="time-moth">2025</div>
-            <div class="dot"></div>
-            <span
-              ><p>22</p>
-              трека,</span
-            >
-            <p>1ч.24 мин.</p>
-          </div>
-        </div>
-      </div>
-      <div class="player">
-        <div>
-          <button>▶</button>
-          <img src="/photo_2025-03-05_19-24-28-Photoroom.png" alt="" />
-          <img src="/313f2d79c89be86dba10c494fbff9248-Photoroom.png" alt="" />
-        </div>
-        <div class="spisokone">
-          <p>список</p>
-        </div>
-      </div>
-      <div class="table">
-        <div class="playlist-header">
-          <div>
-            <span class="number">#</span>
-            <span class="playlist-title">Название</span>
-          </div>
-          <span class="time">время</span>
-        </div>
-        <ul class="track-list"></ul>
-      </div>
-    </div>
-    <footer class="player-bar">
-      <div class="controls">
-        <div>
-          <button>⏮</button>
-          <button id="play">▶</button>
-          <button>⏭</button>
-        </div>
-        <audio src="./music/blue.mp3" controls></audio>
-      </div>
-    </footer>
-    <script type="module" src="./script.js"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
